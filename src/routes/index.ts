@@ -1,9 +1,10 @@
-import { Router, Request, Response } from 'express';
+import app from "../app";
+import { connectDB } from "../config/database";
 
-const router = Router();
+const PORT = process.env.PORT || 3000;
 
-router.get('/', (req: Request, res: Response) => {
-  res.send('¡Hola desde /api!');
+connectDB().then(() => {
+  app.listen(PORT, () => {
+    console.log(`Servidor corriendo en http://localhost:${PORT}`);
+  });
 });
-
-export default router;
