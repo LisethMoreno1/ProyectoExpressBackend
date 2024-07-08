@@ -1,0 +1,33 @@
+# Node.js
+node_modules/
+package-lock.json
+/.env
+
+# TypeScript
+dist/
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dotenv environment variables
+.env
+
+# Misc
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# Optional lock files
+.pnpm-lock.yaml
+yarn.lock
