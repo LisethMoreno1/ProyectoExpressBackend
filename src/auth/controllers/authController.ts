@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import mongoose from "mongoose"; // Asegúrate de importar mongoose
+import mongoose from "mongoose"; 
 import { User } from "../../models/Users/userModel";
 import { generateToken } from "../../utils/token/generateToken";
 import { sendVerificationEmail } from "../../services/mail/emailService";
